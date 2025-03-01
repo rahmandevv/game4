@@ -48,7 +48,7 @@ const Multiplications = () => {
       <div className="container">
         <div className={scss.main}>
           <div className={scss.block}>
-            <h1 className={scss.title}>Математикалык Оюн</h1>
+            <h1 className={scss.title}>Решите пример</h1>
             <p className={scss.question}>
               {firstNum} * {secondNum}
             </p>
