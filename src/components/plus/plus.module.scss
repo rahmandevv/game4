@@ -1,0 +1,139 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+// .btns {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+input {
+  width: 450px;
+  height: 40px;
+  font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1.188rem);
+  border: solid 1px black;
+  padding-left: 20px;
+  border-radius: 20px 0 0 20px;
+}
+
+button {
+  width: 100px;
+  height: 43px;
+  font-size: clamp(0.875rem, 0.839rem + 0.18vw, 1rem);
+  border: solid 1px black;
+}
+
+//
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .question {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .input {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+  }
+
+  .submit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  .message {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .score,
+  .timer {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 480px) {
+    .title {
+      font-size: 20px;
+    }
+
+    .question {
+      font-size: 18px;
+    }
+
+    .input {
+      font-size: 16px;
+    }
+
+    .submit-btn {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+
+    .message,
+    .score,
+    .timer {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    padding: 10px;
+
+    .title {
+      font-size: 18px;
+    }
+
+    .question {
+      font-size: 16px;
+    }
+
+    .input {
+      font-size: 14px;
+      padding: 8px;
+    }
+
+    .submit-btn {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+
+    .message,
+    .score,
+    .timer {
+      font-size: 14px;
+    }
+  }
+}

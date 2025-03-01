@@ -1,0 +1,41 @@
+.id {
+  padding: 40px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  a {
+    color: black;
+    font-size: clamp(0.875rem, 0.786rem + 0.45vw, 1.188rem);
+  }
+  .menu {
+    width: 100%;
+    font-size: 32px;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+.id {
+  @media (max-width: 550px) {
+    .nav p {
+      display: none;
+    }
+    .menu {
+      display: flex;
+    }
+  }
+}
